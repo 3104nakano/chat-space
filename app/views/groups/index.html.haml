@@ -14,11 +14,10 @@
     .groups  
       - current_user.groups.each do |group| 
         .group
-          = link_to '#' do
-            .group_name 
-              = group.name
-            .group_latest-message
-              メッセージはまだありません。
+          .group_name 
+            = group.name
+          .group_latest-message
+            メッセージはまだありません。
      
   .chat-main
     .header
