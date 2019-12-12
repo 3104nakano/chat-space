@@ -1,8 +1,8 @@
+
 .chat-side {
   box-sizing: border-box;
   width: 300px;
   float:left;
-  height: 900px;
   color:#fff;
   .header{
     height:100px;
@@ -77,6 +77,10 @@
         padding:0 20px;
         float:right;
         margin: 28px 40px ;
+        &__btn{
+          color:#38aef0;
+          text-decoration:none;
+        }
       }
         
         }
@@ -86,28 +90,29 @@
           height: calc(100vh - 190px);
           clear:both;
           padding:0 40px;
-          .upper-message{
-            &__name{
-              float:left;
-              margin-top: 46px;
-              font-size: 16px;
-              font-weight: bold;
-              color: #435a54;
+          .message{
+            .upper-message{
+              &__name{
+                float:left;
+                margin-top: 46px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #435a54;
+              }
+              &__date{
+                display: inline-block;
+                margin-left: 10px;
+                font-size: 12px;
+                color: #999999; 
+                margin-top:46px;
+              }
             }
-            &__date{
-              display: inline-block;
-              margin-left: 10px;
-              font-size: 12px;
-              color: #999999; 
-              margin-top:46px;
+            .lower-message{
+              font-size: 14px;
+              clear:both;
+              margin:10px 0 40px;
             }
-           }
-          .lower-message{
-            font-size: 14px;
-            clear:both;
-            margin:10px 0 40px;
           }
-          
         }
 
         .form{
@@ -130,6 +135,9 @@
               font-size: 20px;
               line-height: 50px;
           }
+            .hidden{
+              display: none;
+            }
           }
             &__submit{
               background-color: #38aef0;
